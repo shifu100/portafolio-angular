@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { InfoPaginasService } from 'src/app/services/info-paginas.service';
 // import 'animate.css';
 
 @Component({
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
-  constructor() { }
+   constructor(public _servicio: InfoPaginasService) { }
 
   ngOnInit(): void {
   }
