@@ -24,15 +24,12 @@ export class InfoPaginasService {
         .subscribe( (resp: InfoPagina) =>{
           this.cargada = true;
           this.info = resp;
-          console.log(resp);
-          console.log(this.cargada);
         });
   }
   private cargarEquipo(){
     this.http.get('https://angular-html-2aa29-default-rtdb.firebaseio.com/equipo.json')
         .subscribe((resp: any) =>{
         this.equipo = resp;
-        console.log(resp);  
       });
   }  
 }
